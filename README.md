@@ -50,5 +50,7 @@ Follow these instructions to get a copy of OrganizeMe up and running on your loc
 
 5.Open your web browser and visit http://localhost:3000 to use OrganizeMe.
 
+##
 **License**
-  This project is licensed under the MIT License - see the LICENSE file for details.
+
+This project is licensed under the MIT License - see the LICENSE file for details.
