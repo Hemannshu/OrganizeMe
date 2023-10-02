@@ -39,13 +39,14 @@ Follow these instructions to get a copy of OrganizeMe up and running on your loc
    git clone https://github.com/Hemannshu/OrganizeMe.git
 
 2.Navigate to the project directory:
-   cd OrganizeMe
+
+   ```cd OrganizeMe```
 
 3.Install the dependencies:
-    npm install
+    ```npm install```
 
 4.Start the development server:
-    npm start
+   ``` npm start```
 
 5.Open your web browser and visit http://localhost:3000 to use OrganizeMe.
 
