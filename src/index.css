@@ -1,13 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #fee440;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.App {
+  max-width: 530px;
+  width: 100%;
+  min-height: 400px;
+  margin: 50px auto;
+  padding: 50px;
+  background-color: #030014;
+  position: relative;
+  box-shadow: 20px 20px rgba(19, 1, 1, 0.15);
+  transition: all .4s ease;
+  color: white;
+  z-index: 1;
+  border-radius: 7px;
+}
+
+.App:hover {
+  border-radius: 10% 10% 10% 10% / 6% 6% 6% 6%;
+  box-shadow: 10px 10px rgba(0, 0, 0, .25);
+}
+
+.App .header img {
+  width: 73px;
+  height: 73px;
+  margin-right: 30px;
+  margin-top: 5px;
+  border-radius: 26px;
+}
+
+.App .header {
+  display: flex;
+  justify-content: center;
+  padding: 10px 10px 20px 10px;
+
+}
+
+h1 {
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 900;
+  color: #FFFFFF;
+  margin-top: 15px;
+  font-family: 'Kalam', cursive;
+}
+
+form {
+  width: 100%;
+  height: 40px;
+  margin: 20px 0;
+  display: flex;
+
+
+}
+
+form input,
+form button {
+  flex: 3 1;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #555;
+  margin: 0 5px;
+}
+
+form input {
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-size: 18px;
+  text-transform: capitalize;
+  font-family: 'Croissant One', cursive;
+
+}
+
+::placeholder {
+  color: rgb(10, 45, 75);
+  text-align: center;
+  opacity: 0.5;
+}
+
+form button {
+  flex: 1 1;
+  background: #a4c3b2;
+  color: #14213d;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-family: 'Croissant One', cursive;
+  font-size: 20px;
+}
+
+ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: 10px 0px 0px 5px;
+  list-style: none;
+  border: 1px solid #ccc;
+  text-transform: capitalize;
+  font-family: 'Croissant One', cursive;
+
+}
+
+ul li .active {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+ul li input,
+.row input {
+  margin-right: 10px;
+  font-family: 'Croissant One', cursive;
+  font-size: 20px;
+}
+
+ul li button {
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  color: #bde0fe;
+  background: #283618;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-family: 'Croissant One', cursive;
+  font-size: 15.5px;
+
+}
+
+ul li button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 0px 6px;
+  font-family: 'Croissant One', cursive;
+  font-size: 15.5px;
+}
+
+#delete {
+  background: red;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  color: #000000;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-family: 'Croissant One', cursive;
+  margin-left: 5px;
+  font-size: 14.5px;
+}
+
+label {
+  cursor: pointer;
+}
+
+/* responsiveness for phone */
+@media(max-width:400px) {
+  .App {
+    max-width: 100%;
+    padding: 10px;
+  }
+}
+
+/* responsiveness for desktop */
+@media (min-width: 768px) {
+  .App {
+    max-width: 530px;
+    padding: 50px;
+  }
+}
+
+h2 {
+  text-align: center;
+  color: whitesmoke;
+  font-family: 'Croissant One', cursive;
+  margin-top: 65px;
+}
+
+#taskCount {
+  color: red;
+  font-size: 16px;
+  margin-right: 2px;
+  margin-left: 2px;
+}
+
+p {
+  margin-left: 50px;
+}
+
+/* background styling */
+svg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 0;
 }
